@@ -1,10 +1,10 @@
 pipeline{
 	agent any
 	stages {
-        	stage('Build'){
+        	stage('Compile'){
 			steps{
         			sh 'cd MavenWebApp'
-				sh 'mvn -Dmaven.test.failure.ignore=true install'
+				sh 'mvn clean compile'
 			}
 		}
 	}
