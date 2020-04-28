@@ -3,8 +3,10 @@ pipeline{
 	stages {
         	stage('Compile'){
 			steps{
-        			bat 'cd MavenWebApp'
-				bat 'mvn clean compile'
+        			bat """
+				 cd MavenWebApp
+				 mvn clean compile
+				"""
 			}
 		}
 	}
