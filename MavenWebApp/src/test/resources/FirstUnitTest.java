@@ -1,4 +1,4 @@
-package com.org.test;
+package src.test.resources;
 
 import static org.junit.Assert.*;
 
@@ -7,8 +7,9 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import src.main.resources.TestOne;
 
-public class MyUnitTest {
+public class FirstUnitTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -32,7 +33,7 @@ public class MyUnitTest {
 
 	@Test
 	public void test() {
-		assertEquals("Hello","Hello")
+		assertEquals(10,TestOne.add(6,4))
 	}
 
 }
